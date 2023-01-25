@@ -59,8 +59,8 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     color: var(--primary-clr-900);
-    /* background: url(/images/bg-pattern-top.svg) bottom 50vh left -10vw no-repeat, url(/images/bg-pattern-bottom.svg) top 50vh right -10vw no-repeat ; */
-    // background-size: 60%;
+    background: url(/images/bg-pattern-top.svg) bottom 50vh left -10vw no-repeat, url(/images/bg-pattern-bottom.svg) top 50vh right -10vw no-repeat ; 
+    background-size: 60%;
     background-color: var(--primary-clr-500);
     display: grid;
     place-content: center;
