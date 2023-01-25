@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --primary-clr-500:hsl(185, 75%, 39%);
+  --primary-clr-700:hsl(227, 10%, 46%);
+  --primary-clr-900:hsl(229, 23%, 23%);
+  --neutral-clr:hsl(0, 0%, 59%);
+  --fw-400:400;
+  --fw-700:700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  color: var(--primary-clr-900);
+  /* background: url(/images/bg-pattern-top.svg) bottom 50vh left -10vw no-repeat, url(/images/bg-pattern-bottom.svg) top 50vh right -10vw no-repeat ; */
+  background-color: var(--primary-clr-500);
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  body {
+    background: url(/images/bg-pattern-top.svg) top -25vh left -50vw no-repeat, url(/images/bg-pattern-bottom.svg) bottom -25vh right -50vw no-repeat;
+    background-size: 100%;
+    background-color: var(--primary-clr-500);
+    margin: 0 1.5rem;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 10px 40px -10px var(--primary-clr-700);
+  max-width: 350px;
+}
+.card__profile {
+  display: flex;
+  justify-content: center;
+  margin-top: -15%;
+}
+.card__profile img {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  margin-bottom: 1rem;
+}
+.card__text {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+.card__text .card__name {
+  display: flex;
+  justify-content: center;
+}
+.card__text .card__name .name {
+  font-weight: var(--fw-700);
+}
+.card__text .card__name .age {
+  font-weight: var(--fw-400);
+  color: var(--neutral-clr);
+}
+.card__text .location {
+  color: var(--neutral-clr);
+  font-weight: var(--fw-400);
+  font-size: 14px;
+}
+.card__stats {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 1.5rem 0;
+}
+.card__stats span {
+  font-weight: var(--fw-700);
+}
+.card__stats p {
+  color: var(--neutral-clr);
+  font-weight: var(--fw-400);
+  font-size: 14px;
+}/*# sourceMappingURL=styles.css.map */
