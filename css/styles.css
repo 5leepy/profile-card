@@ -124,4 +124,9 @@ body {
   color: var(--neutral-clr);
   font-weight: var(--fw-400);
   font-size: 14px;
+}
+
+hr {
+  border: 1px solid var(--neutral-clr);
+  opacity: 50%;
 }/*# sourceMappingURL=styles.css.map */
